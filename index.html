@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowTrends | O Guia da Maquiagem Atual</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+
+    <div class="top-bar">
+        <p>✨ AS PRINCIPAIS TENDÊNCIAS DE BELEZA E COMPORTAMENTO, DIRETO NO SEU FEED.</p>
+    </div>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <h1 class="logo">GLOW<span>TRENDS</span></h1>
+            
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Buscar tendências...">
+            </div>
+
+            <nav class="nav-links">
+                <a href="#">Início</a>
+                <a href="#">Tendências</a>
+                <button id="theme-toggle" class="theme-btn">🌙 MODO ESCURO</button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-editorial">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <span class="hero-tag">BELEZA & CULTURA</span>
+                <h2>MAQUIAGEM NA ATUALIDADE: A era da beleza real e descomplicada</h2>
+                <p>Do minimalismo iluminado às estéticas marcantes das redes sociais. Analisamos os movimentos que estão definindo a identidade visual desta temporada.</p>
+            </div>
+            <div class="hero-img-container">
+                <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=1000&q=80" alt="Estética Clean Girl" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <main class="container feed">
+        <h3 class="section-title">Leia as últimas</h3>
+        
+        <div class="posts-grid" id="posts-grid">
+            
+            <article class="post-card" data-title="boca vinil acabamento espelhado gloss">
+                <div class="post-img-container">
+                    <img src="https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=600&q=80" alt="Lábios com gloss brilhante" class="post-img">
+                </div>
+                <div class="post-content">
+                    <span class="category">BELEZA & CULTURA</span>
+                    <h4>Boca Vinil: O Acabamento Espelhado</h4>
+                    <p>O efeito molhado e lábios ultra destacados com gloss de alta fixação que dominam os looks modernos.</p>
+                    <div class="post-footer">
+                        <button class="like-btn">❤️ Like <span class="like-count">0</span></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post-card" data-title="glam olhos de fada delineado">
+                <div class="post-img-container">
+                    <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=600&q=80" alt="Maquiagem Glam" class="post-img">
+                </div>
+                <div class="post-content">
+                    <span class="category">ULTIMATE GLAM</span>
+                    <h4>Olhos de Fada: O Delineado Perfeito</h4>
+                    <p>Do palco ao jantar especial: como criar uma maquiagem de alta intensidade, brilho e glamour clássico.</p>
+                    <div class="post-footer">
+                        <button class="like-btn">❤️ Like <span class="like-count">0</span></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post-card" data-title="y2k reborn sombras pasteis anos 2000">
+                <div class="post-img-container">
+                    <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=600&q=80" alt="Maquiagem colorida estilo vintage" class="post-img">
+                </div>
+                <div class="post-content">
+                    <span class="category">Y2K REBORN</span>
+                    <h4>O Retorno das Sombras Pastéis</h4>
+                    <p>A estética dos anos 2000 está de volta com sombras azuis e lilás metalizadas combinadas com muito gloss.</p>
+                    <div class="post-footer">
+                        <button class="like-btn">❤️ Like <span class="like-count">0</span></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post-card" data-title="latina makeup contorno precisao ombre">
+                <div class="post-img-container">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Estética Latina" class="post-img">
+                </div>
+                <div class="post-content">
+                    <span class="category">ESTILOS ICÔNICOS</span>
+                    <h4>Latina Makeup: Contorno e Precisão</h4>
+                    <p>Sobrancelhas perfeitamente arqueadas, contorno marcante e lábios ombré com lápis marrom e corretivo.</p>
+                    <div class="post-footer">
+                        <button class="like-btn">❤️ Like <span class="like-count">0</span></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post-card" data-title="baddie aesthetic olhar marcante gatinho">
+                <div class="post-img-container">
+                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80" alt="Estética Baddie" class="post-img">
+                </div>
+                <div class="post-content">
+                    <span class="category">TRENDING NOW</span>
+                    <h4>Baddie Aesthetic: Olhar Marcante</h4>
+                    <p>Cílios volumosos, delineado gatinho afiado e uma pele impecável com acabamento matte aveludado.</p>
+                    <div class="post-footer">
+                        <button class="like-btn">❤️ Like <span class="like-count">0</span></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post-card" data-title="coquette docura tons rosados blush">
+                <div class="post-img-container">
+                    <img src="https://images.unsplash.com/photo-1515688594390-b649af70d282?auto=format&fit=crop&w=600&q=80" alt="Estética Coquette" class="post-img">
+                </div>
+                <div class="post-content">
+                    <span class="category">NEW NOSTALGIA</span>
+                    <h4>Coquette: A Doçura dos Tons Rosados</h4>
+                    <p>Foco em blushes bem esfumados nas maçãs, iluminador sutil, tons de rosa pastel e uma vibe romântica irresistível.</p>
+                    <div class="post-footer">
+                        <button class="like-btn">❤️ Like <span class="like-count">0</span></button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <section class="newsletter-section">
+        <div class="newsletter-container">
+            <h3>Fique por dentro das tendências</h3>
+            <p>Inscreva seu e-mail para receber alertas de novos posts e estéticas que estão bombando.</p>
+            <form id="follow-form" class="newsletter-form">
+                <input type="email" placeholder="Seu melhor e-mail" required>
+                <button type="submit">Seguir Blog</button>
+            </form>
+            <p id="follow-message" class="follow-success-msg"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 GlowTrends. Inspirado no design editorial moderno. Hospedado via GitHub Pages.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
