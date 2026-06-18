@@ -1,0 +1,331 @@
+/* Variáveis de Cores Estilo Editorial */
+:root {
+    --bg-color: #fdfbf7;
+    --card-bg: #ffffff;
+    --text-color: #111111;
+    --text-light: #555555;
+    --nav-bg: #ffffff;
+    --border-color: #111111;
+    --primary-color: #e07a5f;
+    --top-bar-bg: #111111;
+    --top-bar-text: #ffffff;
+}
+
+body.dark-mode {
+    --bg-color: #121212;
+    --card-bg: #1c1c1c;
+    --text-color: #f5f5f5;
+    --text-light: #aaaaaa;
+    --nav-bg: #121212;
+    --border-color: #f5f5f5;
+    --primary-color: #f4a261;
+    --top-bar-bg: #1c1c1c;
+    --top-bar-text: #f5f5f5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Tarja Superior */
+.top-bar {
+    background-color: var(--top-bar-bg);
+    color: var(--top-bar-text);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--nav-bg);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+body.dark-mode .navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    font-weight: 400;
+    font-style: italic;
+    color: var(--primary-color);
+}
+
+/* Barra de Pesquisa */
+.search-container input {
+    padding: 8px 15px;
+    font-size: 13px;
+    border: 1px solid var(--text-light);
+    background-color: transparent;
+    color: var(--text-color);
+    width: 200px;
+    outline: none;
+}
+
+.search-container input:focus {
+    border-color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.theme-btn {
+    background: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    padding: 6px 14px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Hero Split */
+.hero-editorial {
+    padding: 60px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .nav-container { flex-direction: column; gap: 15px; }
+}
+
+.hero-tag {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.hero-editorial h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.hero-editorial p {
+    font-size: 15px;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.hero-img-container {
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Grid de Artigos */
+.feed {
+    padding: 60px 0;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+.post-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+}
+
+.post-img-container {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+}
+
+.post-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-content {
+    padding: 20px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.category {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.post-content h4 {
+    font-family: 'Playfair Display', serif;
+    margin: 10px 0;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.post-content p {
+    font-size: 14px;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.post-footer {
+    margin-top: auto;
+}
+
+.like-btn {
+    background: transparent;
+    border: 1px solid var(--text-color);
+    padding: 6px 14px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--text-color);
+}
+
+/* Seção Opção de Seguir (Newsletter) */
+.newsletter-section {
+    background-color: var(--card-bg);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 60px 0;
+    text-align: center;
+}
+
+body.dark-mode .newsletter-section {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.newsletter-container h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.newsletter-container p {
+    font-size: 14px;
+    color: var(--text-light);
+    margin-bottom: 25px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.newsletter-form input {
+    padding: 12px 15px;
+    border: 1px solid var(--text-color);
+    background: transparent;
+    color: var(--text-color);
+    flex-grow: 1;
+    outline: none;
+}
+
+.newsletter-form button {
+    padding: 12px 25px;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.follow-success-msg {
+    margin-top: 15px;
+    font-size: 13px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 13px;
+    color: var(--text-light);
+}
